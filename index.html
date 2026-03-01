@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samuel Allen Hirsh | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <h1>Samuel Allen Hirsh</h1>
+    <h2 class="header-tagline">WEB Applications AI Front-End Developer<br>Portfolio of Projects<br>PLEASE USE DESKTOP MODE ON YOUR MOBILE DEVICE</h2>
+    <div class="mode-buttons">
+      <button id="light-mode">Light Mode</button>
+      <button id="dark-mode">Dark Mode</button>
+      <button id="color-mode">Random Color Mode</button>
+    </div>
+    <input type="text" id="search" placeholder="Search projects...">
+  </header>
+
+  <!-- Tabs Navigation -->
+  <nav class="tabs">
+    <button class="tab-btn active" data-tab="projects">Projects</button>
+    <button class="tab-btn" data-tab="about">About Me</button>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="content">
+
+  <!-- Projects Section (initially active) -->
+  <section class="tab-content active" id="projects">
+    <div class="categories">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="web">Web Design</button>
+      <button class="filter-btn" data-category="graphic">Graphic Design</button>
+      <button class="filter-btn" data-category="video">Videos</button>
+      <button class="filter-btn" data-category="form">Forms</button>
+      <button class="filter-btn" data-category="codepen">CodePen Projects</button>
+      <button class="filter-btn" data-category="games">Games</button>
+      <button class="filter-btn" data-category="emails">Emails</button>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="projects-grid" id="project-grid">
+      <!-- Project Cards Start Here -->
+      <div class="project-card" data-category="codepen">
+        <img src="https://live.staticflickr.com/65535/53740453258_43dc67db26_h.jpg" alt="Hex Code Generator">
+        <div class="content">
+          <h3>Hex Code Generator</h3>
+          <p>Under Construction</p>
+        </div>
+        <a href="..." class="view-btn" target="_blank">View Project</a>
+      </div>
+
+    <!-- Project 2: Prompt Generator (CodePen) -->
+    <div class="project-card" data-category="codepen">
+      <img src="https://live.staticflickr.com/65535/53642038585_07481822ef_h.jpg" alt="Prompt Generator">
+      <div class="content">
+        <h3>Prompt Generator</h3>
+        <p>Unlock endless creativity with AI prompt generation!</p>
+      </div>
+      <a href="https://codepen.io/Samuel-Hirsh/live/YzbwWYO/8d6e5ed0c2a0d8a1e94b57b365e253b5" class="view-btn" target="_blank">View Project</a>
+    </div>
+
+    <!-- Project 3: The Payroll Shoppe (Web Design) -->
+    <div class="project-card" data-category="web">
+      <img src="https://live.staticflickr.com/65535/53641916429_905d1a627a_h.jpg" alt="The Payroll Shoppe">
+      <div class="content">
+        <h3>The Payroll Shoppe</h3>
+        <p>Personalized payroll management and software support.</p>
+      </div>
+      <a href="https://thepayrollshoppe.com/" class="view-btn" target="_blank">View Project</a>
+    </div>
+
+    <!-- Project 4: Christina Roselle Handbags (Web Design) -->
+    <div class="project-card" data-category="web">
+      <img src="https://live.staticflickr.com/65535/53641912254_d183dddf53_h.jpg" alt="Christina Roselle Handbags">
+      <div class="content">
+        <h3>Christina Roselle Handbags</h3>
+        <p>Unique handbags made from fabric and leather samples.</p>
+      </div>
+      <a href="https://www.crhandbags.com/" class="view-btn" target="_blank">View Project</a>
+    </div>
+
+    <!-- Project 5: Shoresh David Project (Web Design) -->
+    <div class="project-card" data-category="web">
+      <img src="https://live.staticflickr.com/65535/53641577326_4f0f3315b7_h.jpg" alt="Shoresh David Project">
+      <div class="content">
+        <h3>Shoresh David Project</h3>
+        <p>Celebrating Jewish and Christian traditions with faith.</p>
+      </div>
+      <a href="https://shoreshdavid.com/" class="view-btn" target="_blank">View Project</a>
+    </div>
+
+    <!-- Project 6: Sun Industrial Project (Web Design) -->
+    <div class="project-card" data-category="web">
+      <img src="https://live.staticflickr.com/65535/53641790243_ee8fa278eb_h.jpg" alt="Sun Industrial Project">
+      <div class="content">
+        <h3>Sun Industrial Project</h3>
+        <p>Residential and commercial construction services.</p>
+      </div>
+      <a href="https://sunindustrial.dxpdev.site/" class="view-btn" target="_blank">View Project</a>
+    </div>
+
+    <!-- Project 7: Liver Education Advocates (Web Design) -->
+    <div class="project-card" data-category="web">
+      <img src="https://live.staticflickr.com/65535/53641578191_2cebb3dd9e_h.jpg" alt="Liver Education Advocates">
+      <div class="content">
+        <h3>Liver Education Advocates</h3>
+        <p>Raising awareness about NAFLD & NASH diseases.</p>
+      </div>
+      <a href="https://liveradvocates.org/" class="view-btn" target="_blank">View Project</a>
+    </div>
+
+    <!-- Project 8: Fischgrund Consulting (Web Design) -->
+    <div class="project-card" data-category="web">
+      <img src="https://live.staticflickr.com/65535/54155037927_752e48da08_h.jpg" alt="Fortuitea Cafe Project">
+      <div class="content">
+        <h3>Fischgrund Consulting</h3>
+        <p>Consulting for process improvement and technology strategy.</p>
+      </div>
+      <a href="https://fischgrundconsulting.com/" class="view-btn" target="_blank">View Project</a>
+    </div>
+      
+  <!-- Project 9: Daily Home Solutions (Web Design) -->
+  <div class="project-card" data-category="web">
+    <img src="https://live.staticflickr.com/65535/53642034745_85cffd0b3b_h.jpg" alt="Daily Home Solutions">
+    <div class="content">
+      <h3>Daily Home Solutions</h3>
+      <p>Appliance repairs and installations in Pittsburgh.</p>
+    </div>
+    <a href="https://dailyhomesolutions.net/" class="view-btn" target="_blank">View Project</a>
+    </div>
+
+<!-- Project 10: Favorite Day Cleaning (Web Design) -->
+<div class="project-card" data-category="web">
+  <img src="https://live.staticflickr.com/65535/53641576916_37e34dae47_h.jpg" alt="Favorite Day Cleaning">
+  <div class="content">
+    <h3>Favorite Day Cleaning</h3>
+    <p>Eco-friendly residential and commercial cleaning services.</p>
+  </div>
+  <a href="https://favoritedaycleaning.com/" class="view-btn" target="_blank">View Project</a>
+  </div>
+
+<!-- Project 11: Pittsburgh Solar (Web Design) -->
+<div class="project-card" data-category="web">
+  <img src="https://live.staticflickr.com/65535/53641576761_b36209dd28_h.jpg" alt="Pittsburgh Solar">
+  <div class="content">
+    <h3>Pittsburgh Solar</h3>
+    <p>Residential solar panel installation and design</p>
+  </div>
+  <a href="https://pittsburgh-solar.com/" class="view-btn" target="_blank">View Project</a>
+  </div>
+
+<!-- Project 12: Schooner Spirit of Independence (Web Design) -->
+<div class="project-card" data-category="web">
+  <img src="https://live.staticflickr.com/65535/53641790543_50948abd34_h.jpg" alt="Schooner Spirit of Independence">
+  <div class="content">
+    <h3>Schooner Spirit of Independence</h3>
+    <p>Sunset sails and private charters in Key West.</p>
+  </div>
+  <a href="https://schoonerspiritofindependence.com/" class="view-btn" target="_blank">View Project</a>
+  </div>
+
+<!-- Project 13: Egan Painting (Web Design) -->
+<div class="project-card" data-category="web">
+  <img src="https://live.staticflickr.com/65535/53641790958_2c94407f3e_h.jpg" alt="Egan Painting">
+  <div class="content">
+    <h3>Egan Painting</h3>
+    <p>Commercial painting and drywall refinishing.</p>
+  </div>
+  <a href="https://www.eganpaintingpgh.com/" class="view-btn" target="_blank">View Project</a>
+  </div>
+
+<!-- Project 14: Marshall Fitness Training (Web Design) -->
+<div class="project-card" data-category="web">
+  <img src="https://live.staticflickr.com/65535/53641917744_492e39ab2b_h.jpg" alt="Marshall Fitness Training">
+  <div class="content">
+    <h3>Marshall Fitness Training</h3>
+    <p>Personalized fitness programs and challenges.</p>
+  </div>
+  <a href="https://marshallfitnesstraining.com/" class="view-btn" target="_blank">View Project</a>
+  </div>
+
+<!-- Project 15: Evans Payroll (Web Design) -->
+<div class="project-card" data-category="web">
+  <img src="https://live.staticflickr.com/65535/53641577846_6c67d71c43_h.jpg" alt="Evans Payroll">
+  <div class="content">
+    <h3>Evans Payroll</h3>
+    <p>Reliable and efficient payroll management.</p>
+  </div>
+  <a href="https://evanspayroll.com/" class="view-btn" target="_blank">View Project</a>
+  </div>
+
+<!-- Project 16: Leonard Strategic Advantage (Web Design) -->
+<div class="project-card" data-category="web">
+  <img src="https://live.staticflickr.com/65535/53641911539_0fa1cce811_h.jpg" alt="Leonard Strategic Advantage">
+  <div class="content">
+    <h3>Leonard Strategic Advantage</h3>
+    <p>Performance improvement strategies for businesses.</p>
+  </div>
+  <a href="https://leonardstrategicadvantage.com" class="view-btn" target="_blank">View Project</a>
+  </div>
+
+<!-- Project 17: Mission PSO (Web Design) -->
+<div class="project-card" data-category="web">
+  <img src="https://live.staticflickr.com/65535/53640694772_3035476573_h.jpg" alt="Mission PSO">
+  <div class="content">
+    <h3>Mission PSO</h3>
+    <p>Improving healthcare quality and safety culture.</p>
+  </div>
+  <a href="https://missionpso.org/" class="view-btn" target="_blank">View Project</a>
+  </div>
+
+<!-- Project 18: MustGo Odors Commercial/Ad (Video) -->
+<div class="project-card" data-category="video">
+  <img src="https://live.staticflickr.com/65535/53641791823_3eac0f03c7_h.jpg" alt="MustGo Odors Commercial">
+  <div class="content">
+    <h3>MustGo Odors Commercial/Ad</h3>
+    <p>Eliminates musty odors with innovative products.</p>
+  </div>
+  <a href="https://www.canva.com/design/DAF4O80xylc/JCkqivLmr_Xaug-tXJbSYA/watch" class="view-btn" target="_blank">View Project</a>
+  </div>
+
+<!-- Project 19: DX Performance AI Ad (Video) -->
+<div class="project-card" data-category="video">
+  <img src="https://live.staticflickr.com/65535/53641577866_7e1b4137f1_h.jpg" alt="DX Performance AI Ad">
+  <div class="content">
+    <h3>DX Performance AI Ad</h3>
+    <p>AI-driven strategies to boost business performance.</p>
+  </div>
+  <a href="https://www.canva.com/design/DAF8zJd2HBE/EUkKGGOATw3QcOM7UXKXfQ/watch" class="view-btn" target="_blank">View Project</a>
+  </div>
+
+    <!-- Project 20: Linka (Web Design) -->
+<div class="project-card" data-category="web">
+  <img src="https://live.staticflickr.com/65535/53642032630_0eaf95d6f0_h.jpg" alt="Linka">
+  <div class="content">
+    <h3>Linka</h3>
+    <p>Monetization platform for entrepreneurs and bloggers.</p>
+  </div>
+  <a href="https://joinlinka.com/" class="view-btn" target="_blank">View Project</a>
+  </div>
+
+<!-- Project 21: Building the Blocks (Web Design) -->
+<div class="project-card" data-category="web">
+  <img src="https://live.staticflickr.com/65535/53641917834_0a8df8e470_h.jpg" alt="Building the Blocks">
+  <div class="content">
+    <h3>Building the Blocks</h3>
+    <p>Family lifestyle website for enriching experiences.</p>
+  </div>
+  <a href="https://buildingtheblocks.life/" class="view-btn" target="_blank">View Project</a>
+  </div>
+
+<!-- Project 22: Dream Home Integrations (Web Design) -->
+<div class="project-card" data-category="web">
+  <img src="https://live.staticflickr.com/65535/53641790513_e570f0963e_h.jpg" alt="Dream Home Integrations">
+  <div class="content">
+    <h3>Dream Home Integrations</h3>
+    <p>Home automation, theaters, and security systems.</p>
+  </div>
+  <a href="https://www.dreamhomeintegrations.com/" class="view-btn" target="_blank">View Project</a>
+  </div>
+
+<!-- Project 23: After Hours Key West (Web Design) -->
+<div class="project-card" data-category="web">
+  <img src="https://live.staticflickr.com/65535/53641576686_bc9b62b790_h.jpg" alt="After Hours Key West">
+  <div class="content">
+    <h3>After Hours Key West</h3>
+    <p>Private yacht charters and sunset cruises.</p>
+  </div>
+  <a href="https://afterhourskeywest.com/" class="view-btn" target="_blank">View Project</a>
+  </div>
+
+<!-- Project 24: Roney Construction (Web Design) -->
+<div class="project-card" data-category="web">
+  <img src="https://live.staticflickr.com/65535/53641913259_90d196f22c_h.jpg" alt="Roney Construction">
+  <div class="content">
+    <h3>Roney Construction</h3>
+    <p>Concrete and excavation services in Pittsburgh.</p>
+  </div>
+  <a href="https://www.roneyconstruction.com/" class="view-btn" target="_blank">View Project</a>
+  </div>
+
+<!-- Project 25: Baker Consulting (Web Design) -->
+<div class="project-card" data-category="web">
+  <img src="https://live.staticflickr.com/65535/53659096645_ba7e77d7ca_h.jpg" alt="Baker Consulting">
+  <div class="content">
+    <h3>Baker Consulting</h3>
+    <p>Personalized health insurance solutions.</p>
+  </div>
+  <a href="https://consultbaker.com/" class="view-btn" target="_blank">View Project</a>
+  </div>
+      
+<!-- Project 26: God's Word for All Humanity (Graphic Design) -->
+<div class="project-card" data-category="graphic">
+  <img src="https://live.staticflickr.com/65535/54210826687_1da4487527_h.jpg" alt="God's Word for All Humanity">
+  <div class="content">
+    <h3>God's Word for All Humanity</h3>
+    <p>Graphic Design for Messianic Bible Study</p>
+  </div>
+  <a href="https://www.canva.com/design/DAGL6GpTlzM/MHSZKb3I7jAR4lG-KnhEHQ/watch?utm_content=DAGL6GpTlzM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf838d9f426" class="view-btn" target="_blank">View Project</a>
+  </div>
+      
+<!-- Project 27: The Creator's Marketplace (Graphic Design) -->
+<div class="project-card" data-category="graphic">
+  <img src="https://live.staticflickr.com/65535/54211734696_b8bcf675d2_h.jpg" alt="The Creator's Marketplace">
+  <div class="content">
+    <h3>The Creator's Marketplace</h3>
+    <p>Graphic Design for TCM Equity Launch</p>
+  </div>
+  <a href="https://www.canva.com/design/DAGWj7LOswY/R6tMpjOQWUfea_wQIGvpWA/watch?utm_content=DAGWj7LOswY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h851bfcea79" class="view-btn" target="_blank">View Project</a>
+  </div>
+      
+<!-- Project 28: Shoresh David Torah & Foundations (Graphic Design) -->
+<div class="project-card" data-category="graphic">
+  <img src="https://live.staticflickr.com/65535/54211986374_a4a02de85e_h.jpg" alt="Shoresh David Torah & Foundations">
+  <div class="content">
+    <h3>Torah Portion and Foundations Readings</h3>
+    <p>Graphic Design for Shabbat Bible Readings</p>
+  </div>
+  <a href="https://www.canva.com/design/DAGVt1fsC5E/QGj1CzOkaBD5tzxQX8tAWg/view?utm_content=DAGVt1fsC5E&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha41c2b37e8" class="view-btn" target="_blank">View Project</a>
+  </div>
+      
+<!-- Project 29: 2024 Passover Seder Graphics (Graphic Design) -->
+<div class="project-card" data-category="graphic">
+  <img src="https://live.staticflickr.com/65535/54212010824_06c40f4ce4_h.jpg" alt="2024 Passover Seder Graphics">
+  <div class="content">
+    <h3>2024 Passover Seder Graphics</h3>
+    <p>Graphic Design for Joint Passover Seder with Shoresh David and Yeshua Ben David</p>
+  </div>
+  <a href="https://www.canva.com/design/DAGCfgaqYfo/tJgPCdCrfKjcZH_qkTmiKQ/view?utm_content=DAGCfgaqYfo&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h069029b6be" class="view-btn" target="_blank">View Project</a>
+  </div>
+      
+<!-- Project 30: Urban Local Share Your Story (Graphic Design) -->
+<div class="project-card" data-category="graphic">
+  <img src="https://live.staticflickr.com/65535/54212016639_35cf2a6961_h.jpg" alt="Urban Local Share Your Story Campaign">
+  <div class="content">
+    <h3>Urban Local Share Your Story Campaign</h3>
+    <p>Graphic Design for the Urban Local "Share Your Story" Campaign</p>
+  </div>
+  <a href="https://www.canva.com/design/DAFsYWcmBQ0/nlYeeEutVi8aNpBax44Wrg/view?utm_content=DAFsYWcmBQ0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he340831580" class="view-btn" target="_blank">View Project</a>
+  </div>    
+
+<!-- Project 31: Product Advertisements (Graphic Design) -->
+<div class="project-card" data-category="graphic">
+  <img src="https://live.staticflickr.com/65535/54210881217_4e133d4622_h.jpg" alt="Fake Product Advertisements and Designs">
+  <div class="content">
+    <h3>Fake Product Advertisements and Designs</h3>
+    <p>Graphic Design for Fake Product Advertisements and Product-Designs - Just for Fun</p>
+  </div>
+  <a href="https://www.canva.com/design/DAGKI4u-4yg/IC6tQwtAOiU87ihRnev0oA/view?utm_content=DAGKI4u-4yg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hec9cf4b5ae" class="view-btn" target="_blank">View Project</a>
+  </div>
+      
+<!-- Project 32: Heaven's Family (Graphic Design) -->
+<div class="project-card" data-category="graphic">
+  <img src="https://live.staticflickr.com/65535/54212190350_32d5acc9fe_h.jpg" alt="Heaven's Family">
+  <div class="content">
+    <h3>Heaven's Family</h3>
+    <p>Graphic Design for Heaven's Familly Christian Organization</p>
+  </div>
+  <a href="https://www.canva.com/design/DAGGwv33Fdw/66NasMp31A_oMckC_HHPBg/watch?utm_content=DAGGwv33Fdw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h71436946d2" class="view-btn" target="_blank">View Project</a>
+  </div>
+      
+<!-- Project 33: High Holy Day Graphics (Graphic Design) -->
+<div class="project-card" data-category="graphic">
+  <img src="https://live.staticflickr.com/65535/54210904897_c620125e4a_h.jpg" alt="High Holy Day Graphics">
+  <div class="content">
+    <h3>High Holy Day Graphics</h3>
+    <p>Graphic Designs for Shoresh David, High Holy Day Social Media Posts</p>
+  </div>
+  <a href="https://www.canva.com/design/DAFtzeUPzPE/55a5ICYZyBXm-4hV4dGzGw/view?utm_content=DAFtzeUPzPE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h1d2c2536d1" class="view-btn" target="_blank">View Project</a>
+  </div>
+      
+<!-- Project 34: Sparklez Jewelry & Loan Graphics (Graphic Design) -->
+<div class="project-card" data-category="graphic">
+  <img src="https://live.staticflickr.com/65535/54212216275_d2060e18a7_h.jpg" alt="Sparklez Jewelry & Loan Graphics">
+  <div class="content">
+    <h3>Sparklez Jewelry & Loan Graphics</h3>
+    <p>Graphic Designs for Sparklez Jewelry and Loan Jewelry Shop</p>
+  </div>
+  <a href="https://www.canva.com/design/DAF-SZ0fNC8/faIevt7dM2nxQoWkhBfbRg/watch?utm_content=DAF-SZ0fNC8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha411ebca5f" class="view-btn" target="_blank">View Project</a>
+  </div>
+      
+<!-- Project 35: Sister’s of The Shining Faith  “THE SCROLL OF LIGHT” (Graphic Design) -->
+<div class="project-card" data-category="graphic">
+  <img src="https://live.staticflickr.com/65535/54211817206_0a128a5adf_h.jpg" alt="Sister’s of The Shining Faith  “THE SCROLL OF LIGHT” - Story">
+  <div class="content">
+    <h3>Sister’s of The Shining Faith  “THE SCROLL OF LIGHT” - Story</h3>
+    <p>“THE SCROLL OF LIGHT” - Adventure Story Book - Written for my Daughters</p>
+  </div>
+  <a href="https://www.canva.com/design/DAGY7N8Ctew/578ljAmhjBN0d30OfWSx5Q/view?utm_content=DAGY7N8Ctew&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h77b9aefbe6" class="view-btn" target="_blank">View Project</a>
+  </div>
+      
+<!-- Project 36: MustGo Instagram Posts (Graphic Design) -->
+<div class="project-card" data-category="graphic">
+  <img src="https://live.staticflickr.com/65535/54211827551_7d1d2da554_h.jpg" alt="MustGo Instagram Posts">
+  <div class="content">
+    <h3>MustGo Instagram Posts</h3>
+    <p>Instagram Posts/Graphics for MustGo Odor Musty Odor Removal</p>
+  </div>
+  <a href="https://www.canva.com/design/DAGVEGGXJEM/yeIeTDZ_Ki3-rQzyZpGVrQ/watch?utm_content=DAGVEGGXJEM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he1581e5732" class="view-btn" target="_blank">View Project</a>
+  </div>     
+      
+<!-- Project 37: MustGo FaceBook Posts (Graphic Design) -->
+<div class="project-card" data-category="graphic">
+  <img src="https://live.staticflickr.com/65535/54212073509_0a77daa5cf_h.jpg" alt="MustGo FaceBook Posts">
+  <div class="content">
+    <h3>MustGo FaceBook Posts</h3>
+    <p>FaceBook Posts/Graphics for MustGo Odor Musty Odor Removal</p>
+  </div>
+  <a href="https://www.canva.com/design/DAGVEIPT85U/ZKdWfChjGHTK_irzycZDqw/watch?utm_content=DAGVEIPT85U&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h00be76cc1c" class="view-btn" target="_blank">View Project</a>
+  </div>   
+      
+<!-- Project 38: MORE MustGo Ads (Graphic Design) -->
+<div class="project-card" data-category="graphic">
+  <img src="https://live.staticflickr.com/65535/54210937252_fe2b425453_b.jpg" alt="MORE MustGo Ads">
+  <div class="content">
+    <h3>MORE MustGo Ads</h3>
+    <p>MORE MustGo Posts/Graphics for MustGo Odor Musty Odor Removal</p>
+  </div>
+  <a href="https://www.canva.com/design/DAF-SWx9PuA/a72-K1A1YOyFOrAnTmuL0Q/watch?utm_content=DAF-SWx9PuA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he44fb7a48e" class="view-btn" target="_blank">View Project</a>
+  </div>
+      
+<!-- Project 39: Interstellar Minesweeper (Games) -->
+<div class="project-card" data-category="games">
+  <img src="https://live.staticflickr.com/65535/54239091851_b1af9f366e_h.jpg" alt="Interstellar Minesweeper">
+  <div class="content">
+    <h3>Interstellar Minesweepers</h3>
+    <p>Have fun playing this game of Interrstellar Miinesweeper</p>
+  </div>
+  <a href="https://codepen.io/Samuel-Hirsh/live/raBGwxe/1108c233e5c06997bcdc56136ab8415d" class="view-btn" target="_blank">View Game</a>
+  </div>
+   
+<!-- Project 40: Sudoku (Games) -->
+<div class="project-card" data-category="games">
+  <img src="https://live.staticflickr.com/65535/54239363054_f4825dbf80_h.jpg" alt="Sudoku">
+  <div class="content">
+    <h3>Sudoku</h3>
+    <p>Have fun playing this game of Sudoku</p>
+  </div>
+  <a href="https://codepen.io/Samuel-Hirsh/live/MYgEXZM/f55b0541149e5d6a73c41abb51a719d8" class="view-btn" target="_blank">View Game</a>
+  </div>
+      
+<!-- Project 41: Alona's Garden Calendar Generator (CodePen) -->
+  <div class="project-card" data-category="codepen">
+    <img src="https://live.staticflickr.com/65535/54243895510_c8827b511c_h.jpg" alt="Alona's Garden Calendar Generator">
+    <div class="content">
+      <h3>Alona's Garden Calendar Generator</h3>
+      <p>Generate personalized planting schedules and events for gardening calendars. Hosted on GitHub.</p>
+    </div>
+    <a href="https://oldschoolclassic.github.io/Alona-sGardenCalendarGenerator/" class="view-btn" target="_blank">View Project</a>
+  </div>    
+    
+<!-- Project 42: Soothing Sounds for Baby (CodePen) -->
+  <div class="project-card" data-category="codepen">
+    <img src="https://live.staticflickr.com/65535/54247899714_9443107612_o.png" alt="Soothing Sounds for Baby">
+    <div class="content">
+      <h3>Soothing Sounds for Baby</h3>
+      <p>Designed to create a calming environment for relaxation, focus, or sleep. Enjoy the tranquility!</p>
+    </div>
+    <a href="https://codepen.io/Samuel-Hirsh/live/MYgOQVZ/192f47783f0cad7cfb4225fbe1b90847" class="view-btn" target="_blank">View Project</a>
+  </div>    
+      
+<!-- Project 43: Shoresh David Chavurah Email (Emails) -->
+  <div class="project-card" data-category="emails">
+    <img src="https://live.staticflickr.com/65535/54264085999_349f2f41bf_o.png" alt="Shoresh David Chavurah Email">
+    <div class="content">
+      <h3>Shoresh David Chavurah Email</h3>
+      <p>HTML and CSS designed email template for Messianiic Congregation Fellowship Gathering on Monday Evenings.</p>
+    </div>
+    <a href="https://codepen.io/Samuel-Hirsh/live/yyBKmZY/c6b9040fc9a60fc08cdb3ab684e2ba04" class="view-btn" target="_blank">View Email Template</a>
+  </div>    
+      
+<!-- Project 44: Shoresh David Shabbat Email (Emails) -->
+  <div class="project-card" data-category="emails">
+    <img src="https://live.staticflickr.com/65535/54262961682_70d814a150_o.png" alt="Shoresh David Shabbat Email">
+    <div class="content">
+      <h3>Shoresh David Shabbat Email</h3>
+      <p>HTML and CSS designed email template for Messianiic Congregation Shabbat Service on Saturday Mornings.</p>
+    </div>
+    <a href="https://codepen.io/Samuel-Hirsh/live/QwLxyRR/6a76107548ff78cd35ba8ff24f67690e" class="view-btn" target="_blank">View Email Template</a>
+  </div>
+      
+<!-- Project 45: Pleso Capital Group (Web Design) -->
+  <div class="project-card" data-category="web">
+    <img src="https://live.staticflickr.com/65535/54269852669_86ed220841_o.png" alt="Pleso Capital Group">
+    <div class="content">
+      <h3>Pleso Capital Group</h3>
+      <p>SITE UNDER CONSTRUCTION: We provide personalized wealth management and financial planning services to help you grow, protect, and optimize your financial success</p>
+    </div>
+    <a href="https://pleso.dxperformance.site/wp/" class="view-btn" target="_blank">View Project</a>
+  </div>
+      
+<!-- Project 46: AI-Powered E-Commerce Dashboard (CodePen) -->
+  <div class="project-card" data-category="codepen">
+    <img src="https://live.staticflickr.com/65535/54280169859_9f3b2a89f8_o.png" alt="AI-Powered E-Commerce Dashboard">
+    <div class="content">
+      <h3>AI-Powered E-Commerce Dashboard</h3>
+      <p>An AI-powered e-commerce dashboard offering real-time analytics, inventory management, sales insights, low-stock alerts, and revenue visualization.</p>
+    </div>
+    <a href="https://codepen.io/Samuel-Hirsh/live/YPKOxop/2947d2e44dce93bba8d6b2991a99e9a8" class="view-btn" target="_blank">View Project</a>
+  </div>
+      
+<!-- Project 47: Molly-Runner (Games) -->
+<div class="project-card" data-category="games">
+  <img src="https://live.staticflickr.com/65535/54296054645_89504fef1d_o.png" alt="Molly-Runner">
+  <div class="content">
+    <h3>Molly-Runner</h3>
+    <p>A fun spin-off from the old computer arcade game, Cube-Runner</p>
+  </div>
+  <a href="https://codepen.io/Samuel-Hirsh/live/YzoGbVp/c0d338ecd04a4825acfbc4ef3ad4e64a" class="view-btn" target="_blank">View Game</a>
+  </div>    
+      
+<!-- Project 48: Chanukah Registration Form (Form) -->
+<div class="project-card" data-category="form">
+  <img src="https://live.staticflickr.com/65535/54210074858_11f9b50fe3_h.jpg" alt="Chanukah Registration Form">
+  <div class="content">
+    <h3>Chanukah Registration Form</h3>
+    <p>A user-friendly form designed to seamlessly collect attendee information for a Chanukah event.</p>
+  </div>
+  <a href="https://codepen.io/Samuel-Hirsh/live/LEPReYO/a14113f42bc6c37ecffeabb2fd6af551" class="view-btn" target="_blank">View Project</a>
+  </div>
+      
+<!-- Project 49: Purim Registration Form (Form) -->
+<div class="project-card" data-category="form">
+  <img src="https://live.staticflickr.com/65535/54346626428_24788c84e3_o.png" alt="Purim Registration Form">
+  <div class="content">
+    <h3>Purim Registration Form</h3>
+    <p>A user-friendly form designed to seamlessly collect attendee information for a Purim Celebration event -will connect to user's Woo-Commerce Account for seamless ddonation trnsaction on site.</p>
+  </div>
+  <a href="https://codepen.io/Samuel-Hirsh/live/zxYqrZY/13f8742b3e5c87feb375bb625d5752a8" class="view-btn" target="_blank">View Project</a>
+</div>    
+    
+</section> <!-- Closes Projects Section -->
+
+<!-- About Me Section -->
+<section class="tab-content" id="about">
+  <div class="about-container">
+    <div class="about-header">
+      <img src="https://live.staticflickr.com/65535/54380425033_74e3cc9104_o.png" alt="Profile Image" class="profile-img">
+      <h2>Hi, I'm <span class="highlight">Sam Hirsh</span></h2>
+      <h3>WEB Applications AI Front-End Developer</h3>
+    </div>
+    
+    <!-- AI Tools Button -->
+    <button id="open-popup-btn" class="link-btn ai-tools-btn">AI Tools I Use</button>
+    
+    <div class="about-content">
+      <p>
+        I'm passionate about creating <strong>intuitive, visually stunning, and highly functional digital experiences</strong>. My expertise spans <strong>front-end development</strong>, <strong>web design</strong>, <strong>AI integration</strong>, and <strong>graphic design</strong>. I thrive on blending creativity with technology to deliver seamless user interfaces and automated workflows.
+      </p>
+
+      <ul class="skills-list">
+        <li>Web Design & Development</li>
+        <li>AI-Driven Solutions</li>
+        <li>Graphic Design</li>
+        <li>Content Creation</li>
+        <li>Workflow Automation</li>
+      </ul>
+
+      <p class="about-note">
+        This portfolio was built using <strong>ChatGPT Plus</strong>, <strong>CodePen</strong>, <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>, reflecting my commitment to combining creativity, technology, and innovation.
+      </p>
+
+      <div class="links">
+        <a href="https://www.linkedin.com/in/samuel-hirsh-b354a9a4/" class="link-btn" target="_blank">LinkedIn</a>
+        <a href="https://covenantdesigns.us/" class="link-btn" target="_blank">Website</a>
+        <a href="https://drive.google.com/file/d/1AuDnbZE8OhUHr2WQRGQdlJFwgwn1OxTf/view?usp=sharing" class="link-btn" target="_blank">Download Resume</a>
+        <a href="https://calendly.com/samuel-hirsh11/30min" class="link-btn" target="_blank">Book A Call</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AI Tools Popup Modal -->
+<div id="ai-tools-popup" class="popup-overlay">
+  <div class="popup-content">
+    <span class="close-btn" id="close-popup-btn">&times;</span>
+    <h3>AI Tools I Use</h3>
+    <table class="ai-tools-table">
+      <tbody>
+        <tr><td><a href="https://chat.openai.com/" target="_blank">ChatGPT</a></td><td>An AI chatbot developed by OpenAI for generating human-like responses.</td></tr>
+        <tr><td><a href="https://www.midjourney.com/" target="_blank">Midjourney</a></td><td>An AI tool for creating images from text prompts.</td></tr>
+        <tr><td><a href="https://www.canva.com/" target="_blank">Canva</a></td><td>A design platform with AI features for creating graphics, presentations, and more.</td></tr>
+        <tr><td><a href="https://leonardo.ai/" target="_blank">Leonardo.ai</a></td><td>AI-powered platform for generating high-quality images.</td></tr>
+        <tr><td><a href="https://runwayml.com/" target="_blank">Runway</a></td><td>Creative suite with AI tools for video editing and content creation.</td></tr>
+        <tr><td><a href="https://www.copy.ai/" target="_blank">Copy.ai</a></td><td>AI copywriting tool for generating marketing content and blog posts.</td></tr>
+        <tr><td><a href="https://lumen5.com/" target="_blank">Lumen5</a></td><td>AI tool that converts blog posts into engaging videos.</td></tr>
+        <tr><td><a href="https://www.beautiful.ai/" target="_blank">Beautiful.ai</a></td><td>AI-powered tool for creating professional presentations effortlessly.</td></tr>
+        <tr><td><a href="https://www.d-id.com/" target="_blank">D-ID</a></td><td>AI tool for generating talking avatars from photos or videos.</td></tr>
+        <tr><td><a href="https://octopus.do/" target="_blank">Octopus.do</a></td><td>AI-powered tool for website mapping and project planning.</td></tr>
+        <tr><td><a href="https://quillbot.com/" target="_blank">QuillBot</a></td><td>AI tool for paraphrasing, grammar checking, and summarizing content.</td></tr>
+        <tr><td><a href="https://www.descript.com/" target="_blank">Descript</a></td><td>Audio and video editing platform with AI-driven features.</td></tr>
+        <tr><td><a href="https://www.jasper.ai/" target="_blank">Jasper</a></td><td>AI tool for generating marketing copy, blog posts, and social media content.</td></tr>
+        <tr><td><a href="https://www.notion.so/product/ai" target="_blank">Notion AI</a></td><td>AI-enhanced productivity tool for note-taking, writing, and organizing.</td></tr>
+        <tr><td><a href="https://pictory.ai/" target="_blank">Pictory</a></td><td>AI tool for creating and editing videos from scripts or blog posts.</td></tr>
+        <tr><td><a href="https://www.synthesia.io/" target="_blank">Synthesia</a></td><td>AI platform for creating videos with realistic AI avatars.</td></tr>
+        <tr><td><a href="https://elevenlabs.io/" target="_blank">ElevenLabs</a></td><td>AI-powered text-to-speech and voice cloning tool.</td></tr>
+        <tr><td><a href="https://sora.openai.com/" target="_blank">Sora</a></td><td>OpenAI's generative AI tool for video creation and editing.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="cursor-control">
+  <label for="cursor-select">Cursor Effect:</label>
+  <select id="cursor-select">
+    <option value="none">None</option>
+    <option value="neonGlow">Neon Glow</option>
+    <option value="particleBurst">Particle Burst</option>
+    <option value="laserTrail">Laser Trail</option>
+    <option value="matrixCode">Matrix Code</option>
+    <option value="rippleEffect">Ripple Effect</option>
+  </select>
+</div>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
