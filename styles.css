@@ -1,0 +1,589 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* General Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f4f8;
+  color: #333;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.header-tagline {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #555;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Dark Mode for Tagline */
+body.dark-mode .header-tagline {
+  color: #aaa;
+}
+
+/* Mode Buttons */
+.mode-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.mode-buttons button {
+  background: #007bff;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0px 5px 15px rgba(0, 123, 255, 0.3);
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.mode-buttons button:hover {
+  background: #0056b3;
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 20px rgba(0, 123, 255, 0.5);
+}
+
+/* Search Bar */
+#search {
+  padding: 0.8rem 1rem;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 50px;
+  border: 2px solid #007bff;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 4px 15px rgba(0, 123, 255, 0.2);
+  outline: none;
+  font-size: 1rem;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+#search:focus {
+  border-color: #0056b3;
+  box-shadow: 0px 4px 20px rgba(0, 123, 255, 0.4);
+}
+
+#search::placeholder {
+  color: #555;
+}
+
+/* Tabs Navigation */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+/* Hide all tab contents by default */
+.tab-content {
+  display: none;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Show the active tab content */
+.tab-content.active {
+  display: block;
+}
+
+.tab-btn {
+  background: #007bff;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.tab-btn:hover,
+.tab-btn.active {
+  background: #0056b3;
+  transform: translateY(-3px);
+}
+
+/* Categories */
+.categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.filter-btn {
+  background: #007bff;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0px 5px 15px rgba(0, 123, 255, 0.3);
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: #0056b3;
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 20px rgba(0, 123, 255, 0.5);
+}
+
+/* Ensure tab-content sections do not display simultaneously */
+.tab-content {
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Ensure margin between tab contents */
+.tab-content {
+  margin-bottom: 2rem;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 1rem;
+}
+
+.project-card .view-btn {
+  margin-top: auto;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 5rem;
+  padding: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+.project-card img {
+  width: 100%;
+  height: 270px;
+  border-radius: 5px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.project-card h3 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 1.8rem;
+}
+
+/* View Project Button */
+.view-btn {
+  background: #28a745;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0px 5px 15px rgba(40, 167, 69, 0.3);
+  margin-top: auto;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.view-btn:hover {
+  background: #218838;
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 20px rgba(40, 167, 69, 0.5);
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background: #1e1e2f;
+  color: #f0f0f0;
+}
+
+body.dark-mode .header,
+body.dark-mode .project-card,
+body.dark-mode .about-container,
+body.dark-mode #search {
+  background: rgba(40, 40, 60, 0.8);
+  color: #f0f0f0;
+}
+
+body.dark-mode .project-card p {
+  color: #f0f0f0;
+}
+
+body.dark-mode .view-btn {
+  background: #28a745;
+}
+
+body.dark-mode .view-btn:hover {
+  background: #218838;
+}
+
+/* Ensure the body takes full height and allows scrolling */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f4f8;
+  color: #333;
+  transition: background-color 0.5s, color 0.5s;
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* About Me Section */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #f0f4f8, #e7ecf3);
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 4rem auto;
+  color: #333;
+  text-align: center;
+  overflow: hidden;
+}
+
+.profile-img:hover {
+  transform: scale(1.5);
+}
+
+/* About Me Image */
+.about-container img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 4px solid #007bff;
+}
+
+/* About Me Text */
+.about-container p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #444;
+  max-width: 600px;
+  margin-bottom: 1.5rem;
+}
+
+/* Buttons in About Me Section */
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.links .link-btn {
+  background: #007bff;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0px 5px 15px rgba(0, 123, 255, 0.3);
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.links .link-btn:hover {
+  background: #0056b3;
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 20px rgba(0, 123, 255, 0.5);
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 1.5rem 1rem;
+    margin: 1rem;
+    max-height: 85vh;
+  }
+
+  .about-container img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .links {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}
+
+/* Dark Mode Fix for About Me Section */
+body.dark-mode .about-container {
+  background: rgba(255, 255, 255, 0.1);
+  color: #f0f0f0;
+}
+
+body.dark-mode .about-container h2 {
+  color: #4da3ff;
+}
+
+body.dark-mode .about-container p {
+  color: #f0f0f0;
+}
+
+body.dark-mode .links .link-btn {
+  background: #4da3ff;
+  color: #1e1e2f;
+}
+
+body.dark-mode .links .link-btn:hover {
+  background: #007bff;
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    gap: 1.5rem 1rem;
+  }
+
+  .project-card {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Glow Effect for Project Card on Hover */
+.project-card:hover {
+  box-shadow: 0px 0px 30px rgba(0, 123, 255, 0.6);
+  transform: translateY(-5px);
+}
+
+/* Glow Class for Project Card */
+.project-card.glow {
+  box-shadow: 0px 0px 30px rgba(0, 123, 255, 0.6);
+  transform: translateY(-5px);
+}
+
+.cursor-control {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  z-index: 10000;
+  font-family: 'Inter', sans-serif;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
+  color: #333;
+}
+
+#cursor-select {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #007bff;
+  border-radius: 25px;
+  background: #fff;
+  color: #333;
+  cursor: pointer;
+  box-shadow: 0px 4px 15px rgba(0, 123, 255, 0.2);
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+#cursor-select:focus {
+  border-color: #0056b3;
+  box-shadow: 0px 4px 20px rgba(0, 123, 255, 0.4);
+  outline: none;
+}
+
+/* Ensure About Section Fits on Mobile */
+.about-container {
+  padding: 1.5rem 1rem;
+  margin-bottom: 6rem;
+}
+
+.links {
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .links {
+    flex-direction: row;
+  }
+}
+
+/* Ensure About Section Fits on Mobile */
+.about-container {
+  padding: 2rem 1rem;
+  margin-bottom: 4rem;
+}
+
+/* Ensure Links in About Section Stack Vertically on Mobile */
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Links Layout for Larger Screens */
+@media (min-width: 768px) {
+  .links {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/* AI Tools Popup Styles */
+.popup-overlay {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 10000;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  overflow-y: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+/* AI Tools Popup Header Styling */
+.popup-content h3 {
+  color: #000;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.popup-overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+}
+
+/* Close Button for Popup */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #555;
+  transition: color 0.3s;
+}
+
+.close-btn:hover {
+  color: #ff0000;
+}
+
+/* AI Tools Table Styling */
+.ai-tools-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+.ai-tools-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #ddd;
+  color: #000;
+}
+
+.ai-tools-table a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.ai-tools-table a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* AI Tools Button */
+.ai-tools-btn {
+  background: #007bff;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  box-shadow: 0px 5px 15px rgba(40, 167, 69, 0.3);
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+  margin-bottom: 1rem;
+}
+
+.ai-tools-btn:hover {
+  background: #007bff;
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 20px rgba(40, 167, 69, 0.5);
+}
+
+/* Adjustments for Small Screens */
+@media (max-width: 768px) {
+  .ai-tools-btn {
+    width: 100%;
+  }
+}
